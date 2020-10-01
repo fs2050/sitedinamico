@@ -1,0 +1,17 @@
+{
+    "description": "Portfolio",
+    "authors": [
+    {
+        "name": "Fabio",
+            "email": "fabiolfs76@hoptmail.com"
+    }
+    
+    ],
+    "autoload":{
+        "psr-4":{
+            "App\\":"app",
+            "Core\\":"core"
+        }
+    },
+    "require":{}
+}

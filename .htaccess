@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteCond %{REQUESt_FILENAME} !-d
+RewriteCond %{REQUESt_FILENAME} !-f
+RewriteCond %{REQUESt_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+ErrorDocument 403 https://planbwebapps.com.br/
+Options -Indexes
